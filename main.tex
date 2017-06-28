@@ -1,0 +1,95 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[sort, numbers]{natbib} %Use bibtex package
+\usepackage{url}
+\usepackage{}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\bibliographystyle{unsrtnat}
+
+\setcounter{secnumdepth}{4}
+
+\newcommand*{\titleGP}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+{\LARGE Falling Leaves}\\[0.2\baselineskip] % Title
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+\scshape % Small caps
+
+ DATE\par % Location and year
+ 
+\today
+
+\vspace*{2\baselineskip} % Whitespace between location/year and editors
+
+By \\[\baselineskip]
+{\Large Tim Carr \\ Jack Crago \\ Ben Goss \\ Joe Hesketh \par} % Editor list
+\vspace*{2\baselineskip} % Whitespace between location/year and editors
+{\itshape The University of Bristol\par} % Editor affiliation
+
+
+
+\endgroup}
+
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+\titleGP % This command includes the title page
+
+%\maketitle
+\clearpage
+\begin{abstract}
+\input{./abstract.tex}
+\end{abstract}
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+
+\input{./introduction.tex}
+
+\input{./Model.tex}
+
+\input{./Motion.tex}
+
+\input{./Equilibrium.tex}
+
+\input{./parameters.tex}
+
+\input{./Initial_Conditions.tex}
+
+\input{./simulation.tex}
+
+%\input{./results.tex}
+
+\input{./Conclusion.tex}
+
+\input{./development.tex}
+
+\newpage
+
+\bibliography{References}
+
+\end{document}

@@ -1,0 +1,23 @@
+\section{Conclusion}
+
+%Summarise the types of motion
+
+
+
+%Summarise the Equilibrium analysis
+To analyse the equilibrium of the system at $u=\omega=0, \theta=\frac{\pi}{2}, v=\frac{-g}{k_{\parallel}}$ the Jacobian was calculated and evaluated at the equilibrium. The eigenvalues of the Jacobian were then calculated for a range of parameter values to find the stability of the equilibrium and find any bifurcations in the system. 
+It was found for all parameter values investigated that the equilibrium was a saddle. At no point did an eigenvalue cross the imaginary axis and have zero real part, this indicated the system did not have any local bifurcations in the parameter space investigated.  
+\\
+\\
+%Summarise the Parameter analysis
+From Section \ref{params}, it is possible to see which parameters affect the motion the most, and which can be ignored once set to a constant value. The parameter that affects the motion most is $k_{\perp}$, as it causes more dramatic changes in the motion than the other parameters. The parameters that can be ignored once set to a constant are $\rho$, the ratio of density between the air and the leaf,  and f, the ratio between $k_{\perp}$ and $k_{\parallel}$. These can be ignored because for different values, the change in motion is not great. The value for l, the length of the leaf, effects the motion in no great deal, it only effects which direction the leaf moves. This can also be modified using initial conditions, so the length of the leaf is chosen to be kept as a constant. 
+\\
+\\
+%Which initial conditions do/don't influence the motion
+The initial conditions generally did not influence the solution in the long time significantly. There was a single case when the behaviour of the leaf changed noticeably, namely when $k{\perp}=9.75$ and the initial velocity in the x direction was greater than zero. 
+In some cases the initial conditions would influence the initial behaviour of the leaf before the leaf settled to the same motion as shown in Section \ref{sec:motion}. When considering the application of computer graphics this may pose a problem as the leaf is likely to fall for a much shorter time than in the simulation. This would only allow the altered motion to show without showing the long time regular motion. Therefore care would need to be taken when selecting parameters and initial conditions for computer graphics to ensure the desired motion is observed.
+\\
+\\
+%General results from Joe's simulation
+A simulation of the model was created in C++ using the OpenGL\textsuperscript{\textregistered} library. This allowed the model to be applied to computer animation to find the number of leaves that could be animated before the frames per second dropped. It was found that the 500 leaves could be rendered while maintaining a rate of 60fps. When the number of leaves was increased to 13,000 the fps fell to 59. This then fell linearly as the number of leaves was increased until 15,000 leaves were rendered and the rate was slow enough that jumps between frames were visible.  
+

@@ -1,0 +1,19 @@
+\section{Further Development}
+
+In order to further develop the model, there are two approaches that can be taken; development of the simulation and development of the system of equations. 
+
+
+\subsection{Graphical Simulation}
+%model development
+
+The current state of the framework set for animating the falling squares can be improved in a number of ways. The most important improvement would be to fix the problem that the squares all tend towards an angle of $\frac{\pi}{2}$ no matter what the initial conditions are. This is important for getting a realistic motion for falling. The number of squares can then be tested again to see if there is much difference in performance from the previous findings. From there is, it would be possible to remove variables found to have little influence on the motion of the leaf and test to see if more falling objects can be rendered without drops in frame rates. The next thing would be to use more complex shapes such as fully rendered and textured cards and leaves. Then it would be possible to test how many of these objects can be rendered. A method commonly used in rendering three dimensional scenes is varying tessellation with respect to distance. If an object is further away from the camera then it is harder to resolve details of the object. This allows developers to decrease the tessellation level (the number of polygons used to make an object) with respect to distance. The advantage of this is that it means objects at a distance can use fewer polygons whilst still appearing the same. This technique would allow for the simulation to render more leaves. After all this, what would be left would be an efficient physics simulation of falling paper and leaves that can be used within animation.
+
+\subsection{Initial Conditions}
+To further understand the influence of the initial conditions multiple parameters could be varied to investigate how they influence each other. This would allow a greater understanding of which initial configurations would lead to the different types of motion. The initial conditions could also be investigated for a wider range of parameter values to understand how the initial conditions and parameter values interact.
+
+\subsection{Mathematical Model}
+
+In order to further develop the mathematical model that has been created to deal with this problem, a few methods can be undertaken. The first of these methods is further analysis of the different type of movements. Through this, it is possible to find better values for parameters than those seen in Section \ref{params}. The main method to do this would be through multiple simulations, allowing for areas of different falling behaviours of leaves to be plotted on a single graph. This would give an easy way to see boundaries between different behavioural patterns, and allow for specific patterns to be chosen easily.
+\newline \newline Another method for further development is to move the model from two dimensions in to three, allowing for a more realistic model to be created, that takes in to account the shape of the leaf. The easiest way to do this is expand upon the current equations to take in to account for the z-length of the leaf, and then add equations for the motion in the z-direction. The shape could then be investigated to see if a certain shape can guarantee a type of motion. The influence of the parameters on the motion given a shape could also be considered.  
+
+
